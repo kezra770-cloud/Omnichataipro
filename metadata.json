@@ -1,0 +1,8 @@
+{
+  "name": "OmniChat Builder",
+  "description": "Create and deploy intelligent AI chatbots to your websites and social media platforms with ease.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

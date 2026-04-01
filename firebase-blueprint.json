@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "BotProject": {
+      "title": "Bot Project",
+      "description": "A chatbot configuration created by a user.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The name of the bot." },
+        "accentColor": { "type": "string", "description": "The primary color for the bot UI." },
+        "systemInstruction": { "type": "string", "description": "The AI behavior instructions." },
+        "userId": { "type": "string", "description": "The UID of the owner." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the project was created." }
+      },
+      "required": ["name", "userId"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": "BotProject",
+      "description": "Collection of bot configurations."
+    }
+  }
+}
